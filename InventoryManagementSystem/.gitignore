@@ -1,0 +1,53 @@
+# Backend
+Backend/**/bin/
+Backend/**/obj/
+Backend/**/.vs/
+Backend/**/.vscode/
+Backend/**/*.user
+Backend/**/*.suo
+Backend/**/*.sln.iml
+Backend/**/appsettings.*.json
+!Backend/**/appsettings.json
+Backend/**/logs/
+Backend/**/*.db
+Backend/**/*.mdf
+Backend/**/*.ldf
+
+# Frontend
+Frontend/node_modules/
+Frontend/build/
+Frontend/dist/
+Frontend/.env.local
+Frontend/.env.*.local
+Frontend/npm-debug.log*
+Frontend/yarn-debug.log*
+Frontend/yarn-error.log*
+Frontend/.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Database
+*.mdf
+*.ldf
+*.mdb
+*.sqlite
+*.sqlite3
+
+# OS
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# Misc
+*.log
+.env
+.env.local
+dist/

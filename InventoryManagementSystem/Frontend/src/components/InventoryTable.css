@@ -1,0 +1,177 @@
+.inventory-table-container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.inventory-table-container h2 {
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.table-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 250px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.1);
+}
+
+.filter-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-checkbox input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.inventory-table thead {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #ddd;
+}
+
+.inventory-table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.inventory-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.inventory-table tbody tr {
+  transition: background-color 0.2s;
+}
+
+.inventory-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.inventory-table tbody tr.low-stock-row {
+  background-color: #fff3cd;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-badge.normal {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.low {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.btn-edit,
+.btn-delete {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-edit {
+  background-color: #667eea;
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #5568d3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+.table-loading,
+.table-error,
+.table-empty {
+  padding: 20px;
+  text-align: center;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.table-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 768px) {
+  .inventory-table-container {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .table-controls {
+    flex-direction: column;
+  }
+
+  .search-input {
+    min-width: 100%;
+  }
+
+  .inventory-table {
+    font-size: 14px;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    padding: 8px;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
